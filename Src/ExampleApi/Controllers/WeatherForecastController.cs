@@ -31,7 +31,7 @@ public class WeatherForecastController : ControllerBase
         .ToArray();
     }
 
-    [HttpGet("{date}", Name = "GetWeatherForecast2")]
+    [HttpGet("{date}", Name = "GetWeatherForecastForAnotherDay")]
     public WeatherForecast Get(DateTime date)
     {
         return new WeatherForecast
